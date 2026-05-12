@@ -1,0 +1,32 @@
+table genres_tabel
+	lineageTag: ee2ec2a9-d6d8-4bcd-a302-20136471c767
+
+	column genre_naam
+		dataType: string
+		lineageTag: ffe8438e-602c-4d50-b6c0-0c724dc52b55
+		summarizeBy: none
+		sourceColumn: genre_naam
+
+		annotation SummarizationSetBy = Automatic
+
+	column genre_id
+		dataType: int64
+		formatString: 0
+		lineageTag: 5f51c2eb-bbb6-4d21-b1b5-ad5077553a76
+		summarizeBy: none
+		sourceColumn: genre_id
+
+		annotation SummarizationSetBy = Automatic
+
+	partition genres_tabel = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Gebruiker\OneDrive - NHL Stenden\Documenten\test\genres_tabel.csv"),[Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"genre_naam", type text}, {"genre_id", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
