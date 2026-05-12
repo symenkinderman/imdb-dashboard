@@ -1,0 +1,22 @@
+relationship 87942f86-7dc6-22b0-a73f-8a0cab805639
+	fromColumn: film_acteurs.actor_name
+	toColumn: acteurs_tabel.actor_name
+
+relationship AutoDetected_e3a14f0a-d4bc-4012-b9cb-930cb12ea4dc
+	crossFilteringBehavior: bothDirections
+	fromColumn: film_genres.genre_id
+	toColumn: genres_tabel.genre_id
+
+relationship AutoDetected_1c772eae-3063-4757-9cc4-2c4c746a92f5
+	fromColumn: films_tabel.director_name
+	toColumn: regisseurs_tabel.director_name
+
+relationship AutoDetected_77960f68-4f4a-4ca1-bdb7-69a8db4b1653
+	crossFilteringBehavior: bothDirections
+	fromColumn: film_genres.film_id
+	toColumn: films_tabel.film_id
+
+relationship 6d967080-eeff-15c0-e21c-2423fa5d3e43
+	fromColumn: films_tabel.actor_1_name
+	toColumn: acteurs_tabel.actor_name
+

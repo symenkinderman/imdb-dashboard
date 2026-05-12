@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 39.50252871380264,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 34.309807103921244
+          },
+          "nodeIndex": "acteurs_tabel",
+          "nodeLineageTag": "91e22050-f19b-4e28-98c2-31d1f2938f92",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 358.68553111657639,
+            "y": 654.22479490036937
+          },
+          "nodeIndex": "regisseurs_tabel",
+          "nodeLineageTag": "75198dc9-1013-489d-b7a7-404f81d50cc6",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 357.37242731058325
+          },
+          "nodeIndex": "film_acteurs",
+          "nodeLineageTag": "cb2843ef-e435-4b18-ae7e-29318aa896da",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 935.0042435987159,
+            "y": 31.673908716651
+          },
+          "nodeIndex": "genres_tabel",
+          "nodeLineageTag": "ee2ec2a9-d6d8-4bcd-a302-20136471c767",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 632.78671748588465,
+            "y": 22.6699825918852
+          },
+          "nodeIndex": "film_genres",
+          "nodeLineageTag": "2b4a620b-6ce2-45d2-98a4-bcc5df367f34",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 361.8551929088635,
+            "y": 61.422943903045734
+          },
+          "nodeIndex": "films_tabel",
+          "nodeLineageTag": "9aa53fcf-d18d-438e-9c7e-933d7ad9a8df",
+          "size": {
+            "height": 405.86677695299107,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 63.287087723234059,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}
